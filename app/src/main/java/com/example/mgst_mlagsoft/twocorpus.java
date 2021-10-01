@@ -1,35 +1,28 @@
-package com.example.mgst;
+package com.example.mgst_mlagsoft;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.os.Bundle;
+import android.webkit.WebResourceRequest;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.webkit.WebResourceRequest;
-import android.os.Bundle;
-import android.widget.Toast;
-public class MainActivity extends AppCompatActivity {
 
-
-
+public class twocorpus extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-        Toast.makeText(this, "This alpha 1.0.2. Developed by MLag. Добавлено изменения машстаба. Обнаружили баги? писать суда суда -> mlags@vk.com скоро выйдет крупное обновление, где будут расписании 2-ух корпусов!", Toast.LENGTH_LONG).show();
-        ActionBar toast;
-
-
-
-
         setContentView(R.layout.activity_main);
+
+
+        setContentView(R.layout.activity_twocorpus);
 
 
         WebView webView = findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setBuiltInZoomControls(true);
         webView.getSettings().setSupportZoom(true);
-        webView.loadUrl("https://xn--c1arqe.xn--p1ai/raspisanie-1/");
+        webView.loadUrl("https://xn--c1arqe.xn--p1ai/raspisanie-2/");
         WebViewClient webViewClient = new WebViewClient() {
             @SuppressWarnings("deprecation") @Override
 
@@ -51,4 +44,35 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+

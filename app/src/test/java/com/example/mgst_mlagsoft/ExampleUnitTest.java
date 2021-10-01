@@ -1,4 +1,4 @@
-package com.example.mgst;
+package com.example.mgst_mlagsoft;
 
 import org.junit.Test;
 
